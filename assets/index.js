@@ -4,10 +4,10 @@
 
 function fetchUserInfo() {
   // Your OAuth access token
-  const token = 'YOUR_OAUTH_ACCESS_TOKEN'; // nEQTH7rbOKX3l1zmokSeq7el
+  const token = 'xoxb-5525350307635-5862068693698-NwVunIgkD6bdjafJSSQ66F6G' //'YOUR_OAUTH_ACCESS_TOKEN'; // xoxb-5525350307635-5862068693698-NwVunIgkD6bdjafJSSQ66F6G
 
   // The user's Slack ID (replace with the actual ID)
-  const userId = 'USER_ID_TO_FETCH'; // U05RD9H6UA0
+  const userId = 'U05RD9H6UA0' // 'USER_ID_TO_FETCH'; // U05RD9H6UA0
 
   // API endpoint URL
   const apiUrl = `https://slack.com/api/users.info?user=${userId}`;
