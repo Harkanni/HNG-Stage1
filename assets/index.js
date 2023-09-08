@@ -51,10 +51,8 @@
 // }
 
 async function fetchUserInfo() {
-  const user = {
-   username: 'Akanni Emmanuel',
-   profileImage: "./assets/userImage.jpg",
-  }
+  const d = new Date();
+
   const weekday = [
     'Sunday',
     'Monday',
@@ -65,7 +63,13 @@ async function fetchUserInfo() {
     'Saturday'
   ];
 
-  // IMAGE   
+  // USER INFO
+  const user = {
+    username: 'Akanni Emmanuel',
+    profileImage: './assets/userImage.jpg'
+  };
+
+  // IMAGE
   let slackDisplayImageId = document.querySelectorAll(
     '[data-testid = slackDisplayImage]'
   );
@@ -74,8 +78,7 @@ async function fetchUserInfo() {
     slackDisplayImage.alt = user.username;
   });
 
-
-  // USERNAME 
+  // USERNAME
   let slackUserNameId = document.querySelectorAll(
     '[data-testid = slackUserName]'
   );
@@ -83,24 +86,20 @@ async function fetchUserInfo() {
     (slackUserTag) => (slackUserTag.innerHTML = `${user.username}`)
   );
 
-  // DAY OF THE WEEK 
-  const d = new Date();
+  // DAY OF THE WEEK
   let dayOfTheWeek = weekday[d.getDay()];
-
   let currentDayOfTheWeek = document.querySelector(
     '[data-testid = currentDayOfTheWeek]'
   );
   currentDayOfTheWeek.innerHTML = `Current Day Of The Week: ${dayOfTheWeek},`;
 
-
-  // TIME IN MILLISECONDS 
+  // TIME IN MILLISECONDS
   let currentUTCTime = document.querySelector('[data-testid = currentUTCTime]');
   currentUTCTime.innerHTML = `Current Time in Milliseconds: ${d.getTime()}`;
 
-
   // GITHUB URL
   let githubURL = document.querySelector('[data-testid = githubURL]');
-  githubURL.href = `https://github.com/harkanni`;
+  githubURL.href = `https://github.com/Harkanni/HNG-Stage1`;
 }
 
 let userInfo = fetchUserInfo();
