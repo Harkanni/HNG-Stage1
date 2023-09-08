@@ -91,11 +91,11 @@ async function fetchUserInfo() {
   let currentDayOfTheWeek = document.querySelector(
     '[data-testid = currentDayOfTheWeek]'
   );
-  currentDayOfTheWeek.innerHTML = `Current Day Of The Week: ${dayOfTheWeek},`;
+  currentDayOfTheWeek.innerHTML = `${dayOfTheWeek}`;
 
   // TIME IN MILLISECONDS
   let currentUTCTime = document.querySelector('[data-testid = currentUTCTime]');
-  currentUTCTime.innerHTML = `Current Time in Milliseconds: ${d.getTime()}`;
+  currentUTCTime.innerHTML = `${d.getTime()}`;
 
   // GITHUB URL
   let githubURL = document.querySelector('[data-testid = githubURL]');
