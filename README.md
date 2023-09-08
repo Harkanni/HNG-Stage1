@@ -1,1 +1,0 @@
-# HNG-Stage1

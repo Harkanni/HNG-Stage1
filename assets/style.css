@@ -74,9 +74,22 @@ main {
    font-size: 16px;
 }
 
-.project-link a {
-   color: #fff;
+.project-link {
+   text-align: center;
+   color: #000;
    text-transform: capitalize;
+   background-color: #877eff;
+   text-decoration: none;
+   padding: 1rem;
+   border-radius: .5rem;
+   width: 100%;
+}
+
+.project-link a {
+   color: #000;
+   min-width: 100% !important;
+   height: 100% !important;
+   display: block;
 }
 
 footer {
