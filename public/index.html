@@ -10,13 +10,13 @@
    <script src="./assets/index.js"></script>
 </head>
 
-<body onload="">
+<body onload="fetchUserInfo()">
    <header>
       <nav class="navbar">
          <div class="logo">
-            <img data-testid="slackDisplayImage" src="./assets/placeholderImage.jpg" alt="logo">
+            <img data-testid="slackDisplayImage" src="./assets/placeholderImage.jpg" alt="">
          </div>
-         <p data-testid="slackUserName" class="username"> Addedeji </p>
+         <p data-testid="slackUserName" class="username"> </p>
       </nav>
    </header>
 
@@ -25,19 +25,21 @@
          <div class="large-userImage">
             <img data-testid="slackDisplayImage" src="./assets/placeholderImage.jpg" alt="user-large-image">
          </div>
-         
+
          <div class="user-track-info">
             <p data-testid="slackUserName" class="font-2xl mb-3 username"></p>
             <div data-testid="myTrack" class="mb-3 current-track">Frontend Development</div>
-            <div data-testid="currentDayOfTheWeek" class="mb-3 current-day-of-the-week"></div>
-            <div data-testid="currentUTCTime" class="mb-3 current-UTC-Time"></div>
+            <div class="date">
+               <div data-testid="currentDayOfTheWeek" class="mb-3 current-day-of-the-week"></div>
+               <div data-testid="currentUTCTime" class="mb-3 current-UTC-Time"></div>
+            </div>
             <div class="project-link">
                <a href="" data-testid="githubURL" target="_blank">project link</a>
             </div>
          </div>
       </div>
    </main>
-   
+
    <footer class="footer">
       <div>copyright 2023&copy;</div>
    </footer>

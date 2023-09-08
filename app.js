@@ -32,12 +32,8 @@ const client = new WebClient(process.env.SLACK_BOT_TOKEN, {
      return result;
    }
    catch (error) {
-     console.error(error);
+     console.log(`Error Fetching User Info from Slack: ${error.message}`);
    }
 
-}
-
-export function logger() {
-   console.log('Fetcheddddd')
 }
 

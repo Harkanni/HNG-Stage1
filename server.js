@@ -7,10 +7,9 @@ import dotenv from 'dotenv'
 import { fetchUserInfo } from './app.js';
 
 dotenv.config()
-// import { logger } from './app';
 
 
-// logger()
+
 
 const app = express();
 

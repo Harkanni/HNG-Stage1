@@ -35,10 +35,10 @@ async function fetchUserInfo() {
       let dayOfTheWeek = weekday[d.getDay()];
 
       let currentDayOfTheWeek = document.querySelector('[data-testid = currentDayOfTheWeek]');
-      currentDayOfTheWeek.innerHTML = `${dayOfTheWeek}`
+      currentDayOfTheWeek.innerHTML = `${dayOfTheWeek},`
 
       let currentUTCTime = document.querySelector('[data-testid = currentUTCTime]');
-      currentUTCTime.innerHTML = `${d.toUTCString()}`
+      currentUTCTime.innerHTML = `(${d.toUTCString()})`
 
       let githubURL = document.querySelector('[data-testid = githubURL]');
       githubURL.href = `https://github.com/harkanni`

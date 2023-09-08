@@ -64,6 +64,16 @@ main {
   border-radius: 0.6rem;
 }
 
+.date {
+   display: flex;
+   gap: 1rem;
+   align-items: end;
+}
+
+.date .current-UTC-Time {
+   font-size: 16px;
+}
+
 .project-link a {
    color: #fff;
    text-transform: capitalize;
